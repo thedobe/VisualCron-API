@@ -1,6 +1,6 @@
 #database vars
-$dbServer = ''
-$db = ''
+$dbServer = 'someServer'
+$db = 'someDb'
 $q = ''
 
 # create or truncate respective tables
