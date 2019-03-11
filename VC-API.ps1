@@ -52,7 +52,7 @@ foreach ($job in $jobs) {
 
     $jName = $job.Name -replace "'", "''"
 
-    # insert all visual c(h)ron(ic) jobs
+    # insert all visual cron jobs
     $q = '
     if (select ''' + $job.Id + ''' from DBA.dbo.vc_job where [jobid] = ''' + $job.Id + ''') is null
         insert into DBA.dbo.vc_job ([jobid], [jobName], [group], [is_active]) 
