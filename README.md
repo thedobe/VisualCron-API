@@ -1,7 +1,7 @@
 # VisualCron-API
 Leverages the API of VisualCron for analysis of jobs, tasks, etc
 
-VisualCron (at least the version used at my last company [cannot remember the version 2.6X?]) had terrible reporting. Also, it was a flyby wire documented schedulder. Meaning, if Bob created a job and didn't give any type of description to anything it could inflict a lot of pain.
+VisualCron (at least the version used at my last company [cannot remember the version 2.6X?]) had terrible reporting. Also, it was a flyby wire documented schedulder. Meaning, if Bob created a job and didn't give any type of descriptions or documentation to any aspect of the 'job' it will inflict a lot of pain.
 
 The usp_vc_job_populate_tables.sql sproc is pretty brutal, but, there was no access to VC's 'time' (or 'scheduling') lib. It's an extremely over convoluted way of populating a visual schedule for someone to read. 
 
